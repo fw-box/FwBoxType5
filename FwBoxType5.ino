@@ -27,7 +27,7 @@
 #include "FwBox_U8g2Widget.h"
 
 #define DEVICE_TYPE 5
-#define FIRMWARE_VERSION "1.1.2"
+#define FIRMWARE_VERSION "1.1.3"
 
 #define ANALOG_VALUE_DEBOUNCING 8
 
