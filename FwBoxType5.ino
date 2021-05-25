@@ -27,7 +27,7 @@
 #include "FwBox_U8g2Widget.h"
 
 #define DEVICE_TYPE 5
-#define FIRMWARE_VERSION "1.1.5"
+#define FIRMWARE_VERSION "1.1.6"
 
 #define ANALOG_VALUE_DEBOUNCING 8
 
@@ -105,7 +105,7 @@ String Paramaters[2];
 void setup()
 {
   Wire.begin();  // Join IIC bus for Light Sensor (BH1750).
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   fbEarlyBegin(DEVICE_TYPE, FIRMWARE_VERSION);
 
