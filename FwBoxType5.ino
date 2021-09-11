@@ -5,14 +5,21 @@
 // Description :
 //   None
 //
-// Connections :
-//
-// Required Library :
-// arduino-cli lib install PubSubClient
-// arduino-cli lib install U8g2
-// arduino-cli lib install "Adafruit BMP085 Library"
-// arduino-cli lib install BH1750
-// arduino-cli lib install Sodaq_SHT2x
+// Libraries :
+// https://github.com/knolleary/pubsubclient
+// https://github.com/fw-box/U8g2_Arduino
+// https://github.com/fw-box/FwBox_UnifiedLcd
+// https://github.com/fw-box/DFRobot_LCD
+// https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+// https://github.com/fw-box/FwBox_NtpTime
+// https://github.com/PaulStoffregen/Time
+// https://github.com/fw-box/FwBox_TwWeather
+// https://github.com/fw-box/FwBox_U8g2Widget
+// https://github.com/adafruit/Adafruit-BMP085-Library
+// https://github.com/adafruit/Adafruit_Sensor
+// https://github.com/adafruit/Adafruit_BusIO
+// https://github.com/claws/BH1750
+// https://github.com/SodaqMoja/Sodaq_SHT2x
 //
 
 #include "FwBox.h"
@@ -27,7 +34,7 @@
 #include "FwBox_U8g2Widget.h"
 
 #define DEVICE_TYPE 5
-#define FIRMWARE_VERSION "1.1.8"
+#define FIRMWARE_VERSION "1.1.9"
 
 #define ANALOG_VALUE_DEBOUNCING 8
 
