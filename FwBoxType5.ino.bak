@@ -34,7 +34,7 @@
 #include "FwBox_U8g2Widget.h"
 
 #define DEVICE_TYPE 5
-#define FIRMWARE_VERSION "1.1.9"
+#define FIRMWARE_VERSION "1.1.10"
 
 #define ANALOG_VALUE_DEBOUNCING 8
 
@@ -605,7 +605,7 @@ void LcdDisplayType2()
   Lcd->print(" ");
   int iweek = weekday();
   if (iweek >= 1 && iweek <= 7)
-    Lcd->print(WEEK_DAY_NAME[weekday() - 1]);
+    Lcd->print(WEEK_DAY_NAME[iweek - 1]);
   else
     Lcd->print("   ");
   Lcd->print("  ");

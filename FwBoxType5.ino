@@ -553,7 +553,11 @@ void LcdDisplayType1()
   Lcd->print("-");   
   PrintLcdDigits(day());
   Lcd->print(" ");
-  Lcd->print(WEEK_DAY_NAME[weekday() - 1]);
+  int iweek = weekday();
+  if (iweek >= 1 && iweek <= 7)
+    Lcd->print(WEEK_DAY_NAME[iweek - 1]);
+  else
+    Lcd->print("   ");
   Lcd->print("  ");
   Lcd->setCursor(16 - 5, 0); // Align right
   Lcd->printf("%2.1f", TemperatureValue);
@@ -605,7 +609,7 @@ void LcdDisplayType2()
   Lcd->print(" ");
   int iweek = weekday();
   if (iweek >= 1 && iweek <= 7)
-    Lcd->print(WEEK_DAY_NAME[weekday() - 1]);
+    Lcd->print(WEEK_DAY_NAME[iweek - 1]);
   else
     Lcd->print("   ");
   Lcd->print("  ");
